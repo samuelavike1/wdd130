@@ -13,6 +13,17 @@ body {
     background-color: #f4f4f4;
 }
 
+nav {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
 main {
     max-width: 840px;
     margin: 2rem auto;
@@ -22,6 +33,10 @@ main {
 main img {
     width: 150px;
     height: auto;
+}
+
+h1 {
+    color: #333;
 }
 
 

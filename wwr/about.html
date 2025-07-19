@@ -22,19 +22,29 @@
     <link rel="stylesheet" href="styles/rafting.css" />
   </head>
   <body>
+    <!-- header with CSS Grid + Flex nav -->
     <header>
-      <img src="images/wwr-logo.jpg" alt="Whitewater Rafting Logo" />
+      <img
+        src="images/wwr-logo.jpg"
+        alt="Whitewater Rafting Logo"
+        class="logo"
+      />
+      <h1 class="site-title">Whitewater Rafting Co.</h1>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="trips.html">Adventures</a>
-        <a href="contact.html">Contact Us</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </nav>
     </header>
+
     <main>
+      <!-- hero stays as-is or can be updated separately -->
       <div class="hero">
         <img src="images/hero.jpg" alt="Rafting Hero Image" />
-        <h1>Whitewater Rafting Co.</h1>
+        <h2>White Water Rafting</h2>
         <article>
           <img src="images/happy_client.jpg" alt="Happy Client" />
           <p>
@@ -45,39 +55,65 @@
         </article>
       </div>
 
-      <section>
+      <!-- History section laid out in three columns -->
+      <section class="history">
         <h2>History</h2>
-        <p>
-          Founded in the spirit of adventure, our company has been guiding
-          rafters through exciting rapids and scenic routes since 1998. Our
-          mission is to provide safe, thrilling experiences for individuals,
-          families, and groups of all skill levels.
-        </p>
+        <div class="history-content">
+          <p>
+            Founded in the spirit of adventure, our company has been guiding
+            rafters through exciting rapids and scenic routes since 1998. Our
+            mission is to provide safe, thrilling experiences for individuals,
+            families, and groups of all skill levels.
+          </p>
+          <figure>
+            <img src="images/rafting_history.jpg" alt="Historic rafting trip" />
+          </figure>
+          <p>
+            Over the years, we've expanded our routes to include some of the
+            most challenging waterways in the region, while upholding the
+            highest standards of safety and environmental stewardship. Our
+            guides are professionally trained and passionate about sharing
+            unforgettable experiences with our guests.
+          </p>
+        </div>
       </section>
 
-      <section>
+      <!-- Adventures section using figure & figcaption in a single row -->
+      <section class="adventures">
         <h2>Adventure Awaits You!</h2>
-        <img src="images/rafting_1.jpg" alt="Rafting Adventure 1" />
-        <img src="images/rafting_2.jpg" alt="Rafting Adventure 2" />
-        <img src="images/rafting_3.jpg" alt="Rafting Adventure 3" />
-        <img src="images/rafting_4.jpg" alt="Rafting Adventure 4" />
-        <img src="images/rafting_5.jpg" alt="Rafting Adventure 5" />
+        <div class="adventures-grid">
+          <figure>
+            <img src="images/rafting_1.jpg" alt="Los Dientes del Diablo" />
+            <figcaption>Los Dientes del Diablo</figcaption>
+          </figure>
+          <figure>
+            <img src="images/rafting_2.jpg" alt="Big Mallard Rapid" />
+            <figcaption>Big Mallard Rapid</figcaption>
+          </figure>
+          <figure>
+            <img src="images/rafting_3.jpg" alt="Half Day Adventure" />
+            <figcaption>Half Day Adventure</figcaption>
+          </figure>
+          <figure>
+            <img src="images/rafting_4.jpg" alt="Full Day Expedition" />
+            <figcaption>Full Day Expedition</figcaption>
+          </figure>
+          <figure>
+            <img src="images/rafting_5.jpg" alt="Family Fun Rapids" />
+            <figcaption>Family Fun Rapids</figcaption>
+          </figure>
+        </div>
       </section>
     </main>
 
+    <!-- footer as a right-aligned flex container -->
     <footer>
-      <p>&copy; 2025 Whitewater Rafting Co. | Samuel Avike</p>
-      <nav class="socialmedia">
-        <a href="https://facebook.com/"
-          ><img src="images/facebook_icon.png" alt="Facebook Logo"
-        /></a>
-        <a href="https://x.com/"
-          ><img src="images/twitter_icon.png" alt="Twitter Logo"
-        /></a>
-        <a href="https://www.instagram.com/"
-          ><img src="images/instagram_icon.png" alt="Instagram Logo"
-        /></a>
-      </nav>
+      <p>&copy; 2025 Whitewater Rafting Co. | Samuel Apusiyine Avike</p>
+      <div class="socialmedia">
+        <a href="#"><img src="images/facebook_icon.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitter_icon.png" alt="Twitter" /></a>
+        <a href="#"><img src="images/instagram_icon.png" alt="Instagram" /></a>
+      </div>
     </footer>
   </body>
 </html>

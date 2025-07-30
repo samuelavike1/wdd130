@@ -269,3 +269,172 @@ footer p {
 .contact-form button[type="submit"]:hover {
     background-color: var(--secondary-color);
 }
+
+
+/* trips */
+.trips-main {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 24px;
+}
+
+.cta {
+    text-align: center;
+    background-color: var(--accent2-color);
+    padding: 24px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+}
+
+.cta h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.cta a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.trip-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.trip {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+    align-items: center;
+    border: 1px solid var(--accent2-color);
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.trip img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.trip h3 {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+}
+
+.trip-table {
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid var(--accent2-color);
+    padding: 12px;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: var(--heading-font);
+}
+
+.trip-table h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-family: var(--heading-font);
+}
+
+
+/* index */
+.newsletter {
+    max-width: 840px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-family: var(--heading-font);
+    margin-bottom: 16px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid var(--accent2-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    padding: 10px 16px;
+    background-color: var(--accent1-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--secondary-color);
+}
+
+.call-to-action {
+    background-color: var(--accent2-color);
+    text-align: center;
+    padding: 32px 16px;
+    margin: 40px auto;
+}
+
+.call-to-action h2 {
+    font-family: var(--heading-font);
+    margin-bottom: 8px;
+}
+
+.call-to-action a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 24px;
+}
+
+.purpose-grid .grid-item {
+    border: 1px solid var(--accent2-color);
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
+}
+
+.purpose-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
